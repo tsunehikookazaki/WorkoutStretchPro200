@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <queries>
+        <package android:name="net.the_okazakis.letsdoit" />
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorkoutStrech"
+        tools:ignore="LockedOrientationActivity"
+        tools:targetApi="34" >
+        <activity
+            android:name=".Ashiage"
+            android:exported="false" />
+        <activity
+            android:name=".HipAbductionBelt"
+            android:exported="false" />
+        <activity
+            android:name=".BirdDog"
+            android:exported="false" />
+        <activity
+            android:name=".AshiuraNobashiNete"
+            android:exported="false" />
+        <activity
+            android:name=".HipAdductionBall"
+            android:exported="false" />
+        <activity
+            android:name=".Youtube"
+            android:exported="false" />
+        <activity
+            android:name=".KamatasquatTable"
+            android:exported="false" />
+        <activity
+            android:name=".AshikubiKushin"
+            android:exported="false" />
+        <activity
+            android:name=".Kamatakakato"
+            android:exported="false" />
+        <activity
+            android:name=".Kamatasquatwide"
+            android:exported="false" />
+        <activity
+            android:name=".AshiuraNobashiTachi"
+            android:exported="false" />
+        <activity
+            android:name=".ChairSquat"
+            android:exported="false" />
+        <activity
+            android:name=".AshiuraNobashi"
+            android:exported="false" />
+        <activity
+            android:name=".Sukebo"
+            android:exported="false" />
+        <activity
+            android:name=".NaiGaiten"
+            android:exported="false" />
+        <activity
+            android:name=".HipLift"
+            android:exported="false" />
+        <activity
+            android:name=".LegRaise"
+            android:exported="false" />
+        <activity
+            android:name=".Hukkin"
+            android:exported="false" />
+        <activity
+            android:name=".HizaKakae"
+            android:exported="false" />
+        <activity
+            android:name=".AshiJanken"
+            android:exported="false" />
+        <activity
+            android:name=".Ball"
+            android:exported="false" />
+        <activity
+            android:name=".TsumasakiDachi"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MomoMae"
+            android:exported="false" />
+        <activity
+            android:name=".Hihukukin"
+            android:exported="false" />
+        <activity
+            android:name=".ForwardLunge"
+            android:exported="false" />
+        <activity
+            android:name=".LogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".WorkoutService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback"
+            tools:ignore="ForegroundServicePermission" />
+    </application>
+
+</manifest>
